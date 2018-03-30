@@ -37,7 +37,7 @@ namespace Persistance.Core.Repositories
 
 
 			//Return in console sql statement execute on database 
-			//context.Database.Log = Console.Write;
+			context.Database.Log = Console.Write;
 			//bad
 			var test1 = context.Logs
 	 .SelectMany(x => context.Logs
