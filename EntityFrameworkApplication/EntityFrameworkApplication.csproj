@@ -57,6 +57,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Business\Business.csproj">
+      <Project>{82261632-e879-4e77-95a5-d33d06c57c29}</Project>
+      <Name>Business</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Persistance\Persistance.csproj">
       <Project>{cc8d7b96-777d-4a53-b314-984be62a6325}</Project>
       <Name>Persistance</Name>

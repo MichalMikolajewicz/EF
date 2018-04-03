@@ -13,3 +13,5 @@ C:\Users\Michal\Documents\Visual Studio 2017\Projects\EntityFrameworkApplication
 C:\Users\Michal\Documents\Visual Studio 2017\Projects\EntityFrameworkApplication\EntityFrameworkApplication\obj\Debug\EntityFrameworkApplication.csproj.CopyComplete
 C:\Users\Michal\Documents\Visual Studio 2017\Projects\EntityFrameworkApplication\EntityFrameworkApplication\bin\Debug\EntityFramework.SqlServer.dll
 C:\Users\Michal\Documents\Visual Studio 2017\Projects\EntityFrameworkApplication\EntityFrameworkApplication\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Michal\Documents\Visual Studio 2017\Projects\EntityFrameworkApplication\EntityFrameworkApplication\bin\Debug\Business.dll
+C:\Users\Michal\Documents\Visual Studio 2017\Projects\EntityFrameworkApplication\EntityFrameworkApplication\bin\Debug\Business.pdb

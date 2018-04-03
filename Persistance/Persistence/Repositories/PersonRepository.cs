@@ -57,12 +57,7 @@ namespace Persistance.Core.Repositories
 			//i tak leci distinct
 			var groupByAsDistinct = context.Employees.GroupBy(x => new { x.JobTitle, x.Gender })
 				.Select(x => new { x.Key.Gender, x.Key.JobTitle, Count = x.Count() }).ToList();
-			//create database model object using linq to entity generate error
-			var name = context.People.Select(x => new Person
-			{
-				MiddleName = x.MiddleName
 
-			}).ToList();
 			var test = context.People.SelectMany(x => context.People, (x, y) => new { x.BusinessEntityID, x.PersonType })
 				.Distinct();
 			//test.ToList();
