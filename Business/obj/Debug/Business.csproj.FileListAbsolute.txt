@@ -1,7 +1,11 @@
 C:\Users\Michal\Documents\Visual Studio 2017\Projects\EntityFrameworkApplication\Business\bin\Debug\Business.dll
 C:\Users\Michal\Documents\Visual Studio 2017\Projects\EntityFrameworkApplication\Business\bin\Debug\Business.pdb
+C:\Users\Michal\Documents\Visual Studio 2017\Projects\EntityFrameworkApplication\Business\bin\Debug\Helper.dll
+C:\Users\Michal\Documents\Visual Studio 2017\Projects\EntityFrameworkApplication\Business\bin\Debug\Models.dll
 C:\Users\Michal\Documents\Visual Studio 2017\Projects\EntityFrameworkApplication\Business\bin\Debug\Persistance.dll
 C:\Users\Michal\Documents\Visual Studio 2017\Projects\EntityFrameworkApplication\Business\bin\Debug\EntityFramework.dll
+C:\Users\Michal\Documents\Visual Studio 2017\Projects\EntityFrameworkApplication\Business\bin\Debug\Helper.pdb
+C:\Users\Michal\Documents\Visual Studio 2017\Projects\EntityFrameworkApplication\Business\bin\Debug\Models.pdb
 C:\Users\Michal\Documents\Visual Studio 2017\Projects\EntityFrameworkApplication\Business\bin\Debug\Persistance.pdb
 C:\Users\Michal\Documents\Visual Studio 2017\Projects\EntityFrameworkApplication\Business\bin\Debug\Persistance.dll.config
 C:\Users\Michal\Documents\Visual Studio 2017\Projects\EntityFrameworkApplication\Business\bin\Debug\EntityFramework.xml
@@ -10,7 +14,3 @@ C:\Users\Michal\Documents\Visual Studio 2017\Projects\EntityFrameworkApplication
 C:\Users\Michal\Documents\Visual Studio 2017\Projects\EntityFrameworkApplication\Business\obj\Debug\Business.csproj.CopyComplete
 C:\Users\Michal\Documents\Visual Studio 2017\Projects\EntityFrameworkApplication\Business\obj\Debug\Business.dll
 C:\Users\Michal\Documents\Visual Studio 2017\Projects\EntityFrameworkApplication\Business\obj\Debug\Business.pdb
-C:\Users\Michal\Documents\Visual Studio 2017\Projects\EntityFrameworkApplication\Business\bin\Debug\Helper.dll
-C:\Users\Michal\Documents\Visual Studio 2017\Projects\EntityFrameworkApplication\Business\bin\Debug\Models.dll
-C:\Users\Michal\Documents\Visual Studio 2017\Projects\EntityFrameworkApplication\Business\bin\Debug\Helper.pdb
-C:\Users\Michal\Documents\Visual Studio 2017\Projects\EntityFrameworkApplication\Business\bin\Debug\Models.pdb
