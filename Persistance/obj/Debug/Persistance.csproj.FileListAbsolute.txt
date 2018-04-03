@@ -10,3 +10,5 @@ C:\Users\Michal\Documents\Visual Studio 2017\Projects\EntityFrameworkApplication
 C:\Users\Michal\Documents\Visual Studio 2017\Projects\EntityFrameworkApplication\Persistance\obj\Debug\Persistance.csproj.CopyComplete
 C:\Users\Michal\Documents\Visual Studio 2017\Projects\EntityFrameworkApplication\Persistance\obj\Debug\Persistance.dll
 C:\Users\Michal\Documents\Visual Studio 2017\Projects\EntityFrameworkApplication\Persistance\obj\Debug\Persistance.pdb
+C:\Users\Michal\Documents\Visual Studio 2017\Projects\EntityFrameworkApplication\Persistance\obj\Debug\Persistance.Migrations.InitialCreate.resources
+C:\Users\Michal\Documents\Visual Studio 2017\Projects\EntityFrameworkApplication\Persistance\obj\Debug\Persistance.csproj.GenerateResource.cache

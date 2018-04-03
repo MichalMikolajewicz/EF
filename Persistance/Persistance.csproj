@@ -193,6 +193,11 @@
     <Compile Include="Core\Repositories\IVendorRepository.cs" />
     <Compile Include="Core\Repositories\IWorkOrderRepository.cs" />
     <Compile Include="Core\Repositories\IWorkOrderRoutingRepository.cs" />
+    <Compile Include="Migrations\201804031955162_InitialCreate.cs" />
+    <Compile Include="Migrations\201804031955162_InitialCreate.Designer.cs">
+      <DependentUpon>201804031955162_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Persistence\AdventureWorks2014Context.cs" />
     <Compile Include="Core\IUnitOfWork.cs" />
     <Compile Include="Persistence\Repositories\AddressRepository.cs" />
@@ -274,7 +279,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Migration\" />
+    <EmbeddedResource Include="Migrations\201804031955162_InitialCreate.resx">
+      <DependentUpon>201804031955162_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
