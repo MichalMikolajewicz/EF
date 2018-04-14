@@ -1,4 +1,9 @@
-﻿using Persistance.Core;
+﻿using AutoMapper;
+using Business.Configurations.Contracts;
+using Business.Configurations.Implementations;
+using Business.Contracts;
+using Business.Implementations;
+using Persistance.Core;
 using Persistance.Persistence;
 using SimpleInjector;
 using SimpleInjector.Lifestyles;
@@ -20,7 +25,8 @@ namespace Business.Configurations
 			container.Options.DefaultScopedLifestyle = new AsyncScopedLifestyle();
 			container.Register<IUnitOfWork, UnitOfWork>(Lifestyle.Scoped);
 			container.Register<AdventureWorks2014Context>(Lifestyle.Scoped);
-
+			//container.Register<IMapper>(() => GetMapper(container)
+			container.Register<IPeopleService, PeopleService>();
 			container.Verify();
 		}
 	}

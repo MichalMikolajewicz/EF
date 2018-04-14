@@ -8,6 +8,8 @@ using SimpleInjector;
 using Persistance.Core;
 using SimpleInjector.Lifestyles;
 using Business.Configurations;
+using Business.Contracts;
+using Business.Configurations.Implementations;
 
 namespace EntityFrameworkApplication
 {
@@ -17,11 +19,13 @@ namespace EntityFrameworkApplication
 		{
 
 			var container = BusinessContainer.container;
+			BusinessMapper.GetMapper();
 
 			using (AsyncScopedLifestyle.BeginScope(container))
 			{
-				var uow1 = container.GetInstance<IUnitOfWork>();
-				var abc = uow1.People.CartesianProductAndDistinct();
+				var service = container.GetInstance<IPeopleService>();
+				
+				var abc = service.GetPeoples();
 			}
 		}
 	}

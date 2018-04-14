@@ -1,6 +1,8 @@
-﻿using Business.Contracts;
+﻿using AutoMapper;
+using Business.Contracts;
 using Business.Models;
 using Persistance.Core;
+using Persistance.Core.Domain;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -18,15 +20,18 @@ namespace Business.Implementations
 			this.unitOfWork = unitOfWork;
 		}
 
-		IEnumerable<PeopleModel> GetPeoples()
+		public IEnumerable<PeopleModel> GetPeoples()
 		{
 			var list = new List<PeopleModel>();
-			unitOfWork.People.GetAll().ToList().ForEach(x => list.Add(new PeopleModel
-			{
-				Description = x.Password.PasswordHash,
-				LastName = x.LastName,
-				Name = x.FirstName + " " + x.MiddleName
-			}));
+
+			//unitOfWork.People.GetAll().ToList().ForEach(x => list.Add(new PeopleModel
+			//{
+			//	Description = x.Password.PasswordHash,
+			//	LastName = x.LastName,
+			//	Name = x.FirstName + " " + x.MiddleName
+			//}));
+
+			unitOfWork.People.GetAll().ToList().ForEach(x => list.Add(Mapper.Map<Person, PeopleModel>(x)));
 
 			return list;
 
