@@ -14,3 +14,5 @@ C:\Users\Michal\Documents\Visual Studio 2017\Projects\EntityFrameworkApplication
 C:\Users\Michal\Documents\Visual Studio 2017\Projects\EntityFrameworkApplication\Business\obj\Debug\Business.csproj.CopyComplete
 C:\Users\Michal\Documents\Visual Studio 2017\Projects\EntityFrameworkApplication\Business\obj\Debug\Business.dll
 C:\Users\Michal\Documents\Visual Studio 2017\Projects\EntityFrameworkApplication\Business\obj\Debug\Business.pdb
+C:\Users\Michal\Documents\Visual Studio 2017\Projects\EntityFrameworkApplication\Business\bin\Debug\SimpleInjector.dll
+C:\Users\Michal\Documents\Visual Studio 2017\Projects\EntityFrameworkApplication\Business\bin\Debug\SimpleInjector.xml

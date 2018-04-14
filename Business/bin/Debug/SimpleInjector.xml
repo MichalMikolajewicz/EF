@@ -34,6 +34,25 @@
             Basic) if no inner exception is specified. 
             </param>
         </member>
+        <member name="M:SimpleInjector.ActivationException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Initializes a new instance of the <see cref="T:SimpleInjector.ActivationException" /> class with serialized data.
+            </summary>
+            <param name="info">
+            The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception 
+            being thrown. 
+            </param>
+            <param name="context">
+            The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or 
+            destination. 
+            </param>
+            <exception cref="T:System.ArgumentNullException">
+            The <paramref name="info" /> parameter is null. 
+            </exception>
+            <exception cref="T:System.Runtime.Serialization.SerializationException">
+            The class name is null or hresult is zero (0). 
+            </exception>
+        </member>
         <member name="T:SimpleInjector.Advanced.AdvancedExtensions">
             <summary>
             Extension methods for enable advanced scenarios.
@@ -430,6 +449,7 @@
             <see cref="M:SimpleInjector.Container.AddRegistration(System.Type,SimpleInjector.Registration)"/> or anything related to registering from multiple threads concurrently.
             </para>
             </remarks>
+            <summary>Common Container methods specific for the full .NET version of Simple Injector.</summary>
             <summary>Methods for batch registration.</summary>
             <summary>Methods for registration of collections.</summary>
             <summary>Methods for conditional registrations.</summary>
@@ -3558,6 +3578,25 @@
             Basic) if no inner exception is specified. 
             </param>
         </member>
+        <member name="M:SimpleInjector.DiagnosticVerificationException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Initializes a new instance of the <see cref="T:SimpleInjector.DiagnosticVerificationException" /> class with serialized data.
+            </summary>
+            <param name="info">
+            The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception 
+            being thrown. 
+            </param>
+            <param name="context">
+            The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or 
+            destination. 
+            </param>
+            <exception cref="T:System.ArgumentNullException">
+            The <paramref name="info" /> parameter is null. 
+            </exception>
+            <exception cref="T:System.Runtime.Serialization.SerializationException">
+            The class name is null or hresult is zero (0). 
+            </exception>
+        </member>
         <member name="P:SimpleInjector.DiagnosticVerificationException.Errors">
             <summary>Gets the list of <see cref="T:SimpleInjector.Diagnostics.DiagnosticResult"/> instances.</summary>
             <value>A list of <see cref="T:SimpleInjector.Diagnostics.DiagnosticResult"/> instances.</value>
@@ -4580,16 +4619,40 @@
             </example>
         </member>
         <member name="M:SimpleInjector.Lifestyles.AsyncScopedLifestyle.#ctor">
-            <summary>Initializes a new instance of the <see cref="T:SimpleInjector.Lifestyles.AsyncScopedLifestyle"/> class.</summary>
+            <summary>Initializes a new instance of the <see cref="T:SimpleInjector.Lifestyles.AsyncScopedLifestyle"/> class.
+            The created and cached instance will be disposed when the created 
+            <see cref="T:SimpleInjector.Scope"/> instance gets disposed and when the created object implements 
+            <see cref="T:System.IDisposable"/>.
+            </summary>
         </member>
         <member name="M:SimpleInjector.Lifestyles.AsyncScopedLifestyle.BeginScope(SimpleInjector.Container)">
+             <summary>
+             Begins a new scope for the given <paramref name="container"/>. 
+             Services, registered using the <see cref="T:SimpleInjector.Lifestyles.AsyncScopedLifestyle"/> are cached during the 
+             lifetime of that scope. The scope should be disposed explicitly.
+             </summary>
+             <param name="container">The container.</param>
+             <returns>A new <see cref="T:SimpleInjector.Scope"/> instance.</returns>
+             <exception cref="T:System.ArgumentNullException">
+             Thrown when the <paramref name="container"/> is a null reference.</exception>
+             <example>
+             <code lang="cs"><![CDATA[
+             using (AsyncScopedLifestyle.BeginScope())
+             {
+                 var handler = (IRequestHandler)container.GetInstance(handlerType);
+            
+                 handler.Handle(request);
+             }
+             ]]></code>
+             </example>
+        </member>
+        <member name="M:SimpleInjector.Lifestyles.AsyncScopedLifestyle.GetCurrentScopeCore(SimpleInjector.Container)">
             <summary>
-            Begins a new scope for the given <paramref name="container"/>. 
+            Returns the current <see cref="T:SimpleInjector.Scope"/> for this lifestyle and the given 
+            <paramref name="container"/>, or null when this method is executed outside the context of a scope.
             </summary>
-            <param name="container">The container.</param>
-            <returns>A new <see cref="T:SimpleInjector.Scope"/> instance.</returns>
-            <exception cref="T:System.ArgumentNullException">
-            Thrown when the <paramref name="container"/> is a null reference.</exception>
+            <param name="container">The container instance that is related to the scope to return.</param>
+            <returns>A <see cref="T:SimpleInjector.Scope"/> instance or null when there is no scope active in this context.</returns>
         </member>
         <member name="M:SimpleInjector.Lifestyles.AsyncScopedLifestyle.CreateCurrentScopeProvider(SimpleInjector.Container)">
             <summary>
@@ -4888,6 +4951,16 @@
         <member name="P:SimpleInjector.Scope.Container">
             <summary>Gets the container instance that this scope belongs to.</summary>
             <value>The <see cref="P:SimpleInjector.Scope.Container"/> instance.</value>
+        </member>
+        <member name="M:SimpleInjector.Scope.GetInstance``1">
+            <summary>Gets an instance of the given <typeparamref name="TService"/> for the current scope.</summary>
+            <typeparam name="TService">The type of the service to resolve.</typeparam>
+            <returns>An instance of the given service type.</returns>
+        </member>
+        <member name="M:SimpleInjector.Scope.GetInstance(System.Type)">
+            <summary>Gets an instance of the given <paramref name="serviceType" /> for the current scope.</summary>
+            <param name="serviceType">The type of the service to resolve.</param>
+            <returns>An instance of the given service type.</returns>
         </member>
         <member name="M:SimpleInjector.Scope.WhenScopeEnds(System.Action)">
             <summary>
@@ -5206,7 +5279,7 @@
         <member name="P:SimpleInjector.TypesToRegisterOptions.IncludeGenericTypeDefinitions">
             <summary>
             Gets or sets a value indicating whether generic type definitions (types that have
-            <see cref="P:System.Reflection.TypeInfo.IsGenericTypeDefinition">TypeInfo.IsGenericTypeDefinition</see>
+            <see cref="P:System.Type.IsGenericTypeDefinition">Type.IsGenericTypeDefinition</see>
             set to true) 
             should be included in the result. The default value for this property is <b>false</b>.
             </summary>

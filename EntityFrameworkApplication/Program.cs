@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using SimpleInjector;
 using Persistance.Core;
 using SimpleInjector.Lifestyles;
+using Business.Configurations;
 
 namespace EntityFrameworkApplication
 {
@@ -14,9 +15,10 @@ namespace EntityFrameworkApplication
 	{
 		static void Main(string[] args)
 		{
-			var container = Simple.container;
 
-			using (ThreadScopedLifestyle.BeginScope(container))
+			var container = BusinessContainer.container;
+
+			using (AsyncScopedLifestyle.BeginScope(container))
 			{
 				var uow1 = container.GetInstance<IUnitOfWork>();
 				var abc = uow1.People.CartesianProductAndDistinct();
@@ -24,18 +26,4 @@ namespace EntityFrameworkApplication
 		}
 	}
 
-	static class Simple
-	{
-		public static readonly Container container;
-
-		static Simple()
-		{
-			container = new Container();
-			container.Options.DefaultScopedLifestyle = new ThreadScopedLifestyle();
-			container.Register<IUnitOfWork, UnitOfWork>(Lifestyle.Scoped);
-			container.Register<AdventureWorks2014Context>(Lifestyle.Scoped);
-
-			container.Verify();
-		}
-	}
 }
