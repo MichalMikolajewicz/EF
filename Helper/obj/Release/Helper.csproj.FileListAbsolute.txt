@@ -1,0 +1,6 @@
+C:\Users\Michal\Documents\Visual Studio 2017\Projects\EntityFrameworkApplication\Helper\bin\Release\Helper.dll
+C:\Users\Michal\Documents\Visual Studio 2017\Projects\EntityFrameworkApplication\Helper\bin\Release\Helper.pdb
+C:\Users\Michal\Documents\Visual Studio 2017\Projects\EntityFrameworkApplication\Helper\obj\Release\Helper.csprojResolveAssemblyReference.cache
+C:\Users\Michal\Documents\Visual Studio 2017\Projects\EntityFrameworkApplication\Helper\obj\Release\Helper.csproj.CoreCompileInputs.cache
+C:\Users\Michal\Documents\Visual Studio 2017\Projects\EntityFrameworkApplication\Helper\obj\Release\Helper.dll
+C:\Users\Michal\Documents\Visual Studio 2017\Projects\EntityFrameworkApplication\Helper\obj\Release\Helper.pdb

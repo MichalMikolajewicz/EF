@@ -1,0 +1,16 @@
+C:\Users\Michal\Documents\Visual Studio 2017\Projects\EntityFrameworkApplication\Persistance\bin\Release\Persistance.dll.config
+C:\Users\Michal\Documents\Visual Studio 2017\Projects\EntityFrameworkApplication\Persistance\bin\Release\Persistance.dll
+C:\Users\Michal\Documents\Visual Studio 2017\Projects\EntityFrameworkApplication\Persistance\bin\Release\Persistance.pdb
+C:\Users\Michal\Documents\Visual Studio 2017\Projects\EntityFrameworkApplication\Persistance\bin\Release\EntityFramework.dll
+C:\Users\Michal\Documents\Visual Studio 2017\Projects\EntityFrameworkApplication\Persistance\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\Michal\Documents\Visual Studio 2017\Projects\EntityFrameworkApplication\Persistance\bin\Release\Helper.dll
+C:\Users\Michal\Documents\Visual Studio 2017\Projects\EntityFrameworkApplication\Persistance\bin\Release\Helper.pdb
+C:\Users\Michal\Documents\Visual Studio 2017\Projects\EntityFrameworkApplication\Persistance\bin\Release\EntityFramework.xml
+C:\Users\Michal\Documents\Visual Studio 2017\Projects\EntityFrameworkApplication\Persistance\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\Michal\Documents\Visual Studio 2017\Projects\EntityFrameworkApplication\Persistance\obj\Release\Persistance.csprojResolveAssemblyReference.cache
+C:\Users\Michal\Documents\Visual Studio 2017\Projects\EntityFrameworkApplication\Persistance\obj\Release\Persistance.Migrations.InitialCreate.resources
+C:\Users\Michal\Documents\Visual Studio 2017\Projects\EntityFrameworkApplication\Persistance\obj\Release\Persistance.csproj.GenerateResource.cache
+C:\Users\Michal\Documents\Visual Studio 2017\Projects\EntityFrameworkApplication\Persistance\obj\Release\Persistance.csproj.CoreCompileInputs.cache
+C:\Users\Michal\Documents\Visual Studio 2017\Projects\EntityFrameworkApplication\Persistance\obj\Release\Persistance.csproj.CopyComplete
+C:\Users\Michal\Documents\Visual Studio 2017\Projects\EntityFrameworkApplication\Persistance\obj\Release\Persistance.dll
+C:\Users\Michal\Documents\Visual Studio 2017\Projects\EntityFrameworkApplication\Persistance\obj\Release\Persistance.pdb
