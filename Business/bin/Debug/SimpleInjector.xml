@@ -4663,6 +4663,13 @@
             <param name="container">The container for which the delegate gets created.</param>
             <returns>A <see cref="T:System.Func`1"/> delegate. This method never returns null.</returns>
         </member>
+        <member name="T:SimpleInjector.Lifestyles.FlowingScopedLifestyle">
+            <summary>
+            This lifestyle can be used to implement ambient context-less scoping in Simple Injector. This lifestyle
+            can be set as DefaultScopedLifestyle and later used via Lifestyle.Scoped to register scoped instances,
+            while instances are resolved via Scope.GetInstance.
+            </summary>
+        </member>
         <member name="T:SimpleInjector.Lifestyles.LifestyleSelectionBehaviorProxyLifestyle">
             <summary>
             Forwards CreateRegistration calls to the lifestyle that is returned from the registered
@@ -5050,6 +5057,14 @@
             defined Lifetime Scope. The lifetime of instances registered with a scoped lifestyle is always equal
             or bigger than one-instance-per-object-graph. In other words, a call to GetInstance() will never create
             more than one instance of such registered type.
+            </summary>
+        </member>
+        <member name="F:SimpleInjector.ScopedLifestyle.Flowing">
+            <summary>
+            Gets the scoped lifestyle that allows Scoped registrations to be resolved direclty from the
+            <see cref="T:SimpleInjector.Scope"/> by calling <see cref="M:SimpleInjector.Scope.GetInstance``1"/>. This allows multiple
+            scopes to be active and overlap within the same logical context, such as a single thread, or an
+            asynchronous context.
             </summary>
         </member>
         <member name="M:SimpleInjector.ScopedLifestyle.#ctor(System.String)">

@@ -14,24 +14,18 @@ namespace Business.Implementations
 	public class PeopleService : IPeopleService
 	{
 		private readonly IUnitOfWork unitOfWork;
-
-		public PeopleService(IUnitOfWork unitOfWork)
+		private readonly IMapper mapper;
+		public PeopleService(IUnitOfWork unitOfWork, IMapper mapper)
 		{
 			this.unitOfWork = unitOfWork;
+			this.mapper = mapper;
 		}
 
 		public IEnumerable<PeopleModel> GetPeoples()
 		{
 			var list = new List<PeopleModel>();
 
-			//unitOfWork.People.GetAll().ToList().ForEach(x => list.Add(new PeopleModel
-			//{
-			//	Description = x.Password.PasswordHash,
-			//	LastName = x.LastName,
-			//	Name = x.FirstName + " " + x.MiddleName
-			//}));
-
-			unitOfWork.People.GetAll().ToList().ForEach(x => list.Add(Mapper.Map<Person, PeopleModel>(x)));
+			unitOfWork.People.GetAll().ToList().ForEach(x => list.Add(mapper.Map<Person, PeopleModel>(x)));
 
 			return list;
 

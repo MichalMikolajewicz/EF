@@ -1,27 +1,22 @@
 ﻿using AutoMapper;
-using Business.Configurations.Contracts;
 using Business.Models;
+using Persistance.Core.Domain;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Persistance.Core.Domain;
 
 namespace Business.Configurations.Implementations
 {
-	public static class BusinessMapper
+	public class BusinessProfile : Profile
 	{
-		public static void GetMapper()
+		public BusinessProfile()
 		{
-			Mapper.Initialize(cfg => {
-				cfg.CreateMap<Person, PeopleModel>()
+			CreateMap<Person, PeopleModel>()
 				.ForMember(dest => dest.LastName, m => m.MapFrom(src => src.FirstName + " " + src.MiddleName))
 				.ForMember(dest => dest.Name, m => m.MapFrom(src => src.LastName))
 				.ForMember(dest => dest.Description, m => m.MapFrom(src => src.Password.PasswordHash));
-
-			});
 		}
-
 	}
 }

@@ -1,5 +1,4 @@
 ﻿using AutoMapper;
-using Business.Configurations.Contracts;
 using Business.Configurations.Implementations;
 using Business.Contracts;
 using Business.Implementations;
@@ -25,7 +24,9 @@ namespace Business.Configurations
 			container.Options.DefaultScopedLifestyle = new AsyncScopedLifestyle();
 			container.Register<IUnitOfWork, UnitOfWork>(Lifestyle.Scoped);
 			container.Register<AdventureWorks2014Context>(Lifestyle.Scoped);
-			//container.Register<IMapper>(() => GetMapper(container)
+			container.Register<IConfigurationProvider>(() => new MapperConfiguration(cfg => { cfg.AddProfile<BusinessProfile>(); })); // first shit
+			container.Register<InstanceMapper>();
+			container.Register(() => container.GetInstance<InstanceMapper>().GetMapper()); // second shit,
 			container.Register<IPeopleService, PeopleService>();
 			container.Verify();
 		}
