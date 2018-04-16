@@ -51,8 +51,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Configurations\BusinessContainer.cs" />
-    <Compile Include="Configurations\Implementations\InstanceMapper.cs" />
-    <Compile Include="Configurations\Implementations\OrganizationProfile.cs" />
+    <Compile Include="Configurations\InstanceMapper.cs" />
+    <Compile Include="Configurations\OrganizationProfile.cs" />
     <Compile Include="Contracts\IPeopleService.cs" />
     <Compile Include="Implementations\PeopleService.cs" />
     <Compile Include="Models\PeopleModel.cs" />

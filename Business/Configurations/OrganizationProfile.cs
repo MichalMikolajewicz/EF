@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Business.Configurations.Implementations
+namespace Business.Configurations
 {
 	public class BusinessProfile : Profile
 	{

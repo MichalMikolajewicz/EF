@@ -1,5 +1,5 @@
 ﻿using AutoMapper;
-using Business.Configurations.Implementations;
+using Business.Configurations;
 using Business.Contracts;
 using Business.Implementations;
 using Persistance.Core;
