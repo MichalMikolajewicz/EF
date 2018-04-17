@@ -1,6 +1,5 @@
 ﻿using Data.Models;
 using Persistance.Persistence.Repositories;
-using Data.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;

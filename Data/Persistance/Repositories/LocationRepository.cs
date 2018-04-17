@@ -1,5 +1,4 @@
 ﻿using Data.Models;
-using Data.Models;
 using Persistance.Persistence.Repositories;
 
 using System;

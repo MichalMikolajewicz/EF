@@ -9,7 +9,6 @@ using Persistance.Core;
 using SimpleInjector.Lifestyles;
 using Business.Configurations;
 using Business.Contracts;
-using Business.Configurations;
 
 namespace EntityFrameworkApplication
 {
