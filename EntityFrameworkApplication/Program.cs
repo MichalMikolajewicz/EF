@@ -9,7 +9,7 @@ using Persistance.Core;
 using SimpleInjector.Lifestyles;
 using Business.Configurations;
 using Business.Contracts;
-using Business.Configurations.Implementations;
+using Business.Configurations;
 
 namespace EntityFrameworkApplication
 {
@@ -19,7 +19,6 @@ namespace EntityFrameworkApplication
 		{
 
 			var container = BusinessContainer.container;
-			BusinessMapper.GetMapper();
 
 			using (AsyncScopedLifestyle.BeginScope(container))
 			{

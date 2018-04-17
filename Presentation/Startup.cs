@@ -3,6 +3,8 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.SpaServices.Webpack;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Data.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace Presentation
 {
@@ -19,7 +21,10 @@ namespace Presentation
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
-        }
+
+			var connection = @"Server=MICHAL\SQLEXPRESS;Database=AdventureWorks2014;Trusted_Connection=True;";
+			services.AddDbContext<AdventureWorks2014Context>(options => options.UseSqlServer(connection));
+		}
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
