@@ -6,21 +6,22 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Data.Persistence;
 using Data.Models;
+using Data.Core;
 
 namespace Presentation.Controllers
 {
     public class HomeController : Controller
     {
-		private readonly AdventureWorks2014Context _context;
+		private readonly IUnitOfWork _unitOfWork;
 
-		public HomeController(AdventureWorks2014Context context)
+		public HomeController(IUnitOfWork unitOfWork)
 		{
-			_context = context;
+			_unitOfWork = unitOfWork;
 		}
 
 		public IActionResult Index()
         {
-			var people = _context.Person.Where(x => x.BusinessEntityId > 10).Take(2).ToList(); // good!
+			var people = _unitOfWork.People.Get(1); // good!
             return View();
         }
 
