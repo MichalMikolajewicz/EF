@@ -1,6 +1,0 @@
-C:\Users\Michal\Documents\Visual Studio 2017\Projects\EntityFrameworkApplication\Models\bin\Debug\Models.dll
-C:\Users\Michal\Documents\Visual Studio 2017\Projects\EntityFrameworkApplication\Models\bin\Debug\Models.pdb
-C:\Users\Michal\Documents\Visual Studio 2017\Projects\EntityFrameworkApplication\Models\obj\Debug\Models.csprojResolveAssemblyReference.cache
-C:\Users\Michal\Documents\Visual Studio 2017\Projects\EntityFrameworkApplication\Models\obj\Debug\Models.csproj.CoreCompileInputs.cache
-C:\Users\Michal\Documents\Visual Studio 2017\Projects\EntityFrameworkApplication\Models\obj\Debug\Models.dll
-C:\Users\Michal\Documents\Visual Studio 2017\Projects\EntityFrameworkApplication\Models\obj\Debug\Models.pdb

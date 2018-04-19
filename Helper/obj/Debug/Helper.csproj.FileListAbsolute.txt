@@ -1,6 +1,0 @@
-C:\Users\Michal\Documents\Visual Studio 2017\Projects\EntityFrameworkApplication\Helper\bin\Debug\Helper.dll
-C:\Users\Michal\Documents\Visual Studio 2017\Projects\EntityFrameworkApplication\Helper\bin\Debug\Helper.pdb
-C:\Users\Michal\Documents\Visual Studio 2017\Projects\EntityFrameworkApplication\Helper\obj\Debug\Helper.csprojResolveAssemblyReference.cache
-C:\Users\Michal\Documents\Visual Studio 2017\Projects\EntityFrameworkApplication\Helper\obj\Debug\Helper.csproj.CoreCompileInputs.cache
-C:\Users\Michal\Documents\Visual Studio 2017\Projects\EntityFrameworkApplication\Helper\obj\Debug\Helper.dll
-C:\Users\Michal\Documents\Visual Studio 2017\Projects\EntityFrameworkApplication\Helper\obj\Debug\Helper.pdb

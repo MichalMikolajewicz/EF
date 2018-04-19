@@ -1,9 +1,0 @@
-C:\Users\Michal\Documents\Visual Studio 2017\Projects\EntityFrameworkApplication\Logging\bin\Debug\Logging.dll
-C:\Users\Michal\Documents\Visual Studio 2017\Projects\EntityFrameworkApplication\Logging\bin\Debug\Logging.pdb
-C:\Users\Michal\Documents\Visual Studio 2017\Projects\EntityFrameworkApplication\Logging\bin\Debug\log4net.dll
-C:\Users\Michal\Documents\Visual Studio 2017\Projects\EntityFrameworkApplication\Logging\bin\Debug\log4net.xml
-C:\Users\Michal\Documents\Visual Studio 2017\Projects\EntityFrameworkApplication\Logging\obj\Debug\Logging.csprojResolveAssemblyReference.cache
-C:\Users\Michal\Documents\Visual Studio 2017\Projects\EntityFrameworkApplication\Logging\obj\Debug\Logging.csproj.CoreCompileInputs.cache
-C:\Users\Michal\Documents\Visual Studio 2017\Projects\EntityFrameworkApplication\Logging\obj\Debug\Logging.csproj.CopyComplete
-C:\Users\Michal\Documents\Visual Studio 2017\Projects\EntityFrameworkApplication\Logging\obj\Debug\Logging.dll
-C:\Users\Michal\Documents\Visual Studio 2017\Projects\EntityFrameworkApplication\Logging\obj\Debug\Logging.pdb
