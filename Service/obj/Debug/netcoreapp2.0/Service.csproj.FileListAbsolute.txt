@@ -1,4 +1,3 @@
-C:\Users\Michal\Documents\Visual Studio 2017\Projects\EntityFrameworkApplication\Service\obj\Debug\netcoreapp2.0\Service.csprojResolveAssemblyReference.cache
 C:\Users\Michal\Documents\Visual Studio 2017\Projects\EntityFrameworkApplication\Service\obj\Debug\netcoreapp2.0\Service.csproj.CoreCompileInputs.cache
 C:\Users\Michal\Documents\Visual Studio 2017\Projects\EntityFrameworkApplication\Service\obj\Debug\netcoreapp2.0\Service.AssemblyInfoInputs.cache
 C:\Users\Michal\Documents\Visual Studio 2017\Projects\EntityFrameworkApplication\Service\obj\Debug\netcoreapp2.0\Service.AssemblyInfo.cs
@@ -12,3 +11,4 @@ C:\Users\Michal\Documents\Visual Studio 2017\Projects\EntityFrameworkApplication
 C:\Users\Michal\Documents\Visual Studio 2017\Projects\EntityFrameworkApplication\Service\obj\Debug\netcoreapp2.0\Service.csproj.CopyComplete
 C:\Users\Michal\Documents\Visual Studio 2017\Projects\EntityFrameworkApplication\Service\obj\Debug\netcoreapp2.0\Service.dll
 C:\Users\Michal\Documents\Visual Studio 2017\Projects\EntityFrameworkApplication\Service\obj\Debug\netcoreapp2.0\Service.pdb
+C:\Users\Michal\Documents\Visual Studio 2017\Projects\EntityFrameworkApplication\Service\obj\Debug\netcoreapp2.0\Service.csprojAssemblyReference.cache

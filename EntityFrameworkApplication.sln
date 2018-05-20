@@ -9,6 +9,12 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Service", "Service\Service.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Data", "Data\Data.csproj", "{0A6D5ED9-BE7E-40D5-8A0C-83D31633EF24}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "GUI", "GUI", "{6E2A9403-880D-48D4-AD2C-2639AD63AF25}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BusinessLogic", "BusinessLogic", "{321AB327-69A9-4ED5-B00D-9803DBACE0D9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Persistance", "Persistance", "{AD1DB808-8AF4-4B6F-8882-E008F38D7AA1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,6 +36,11 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{541758DE-AFBF-4842-B771-E454825C85B6} = {6E2A9403-880D-48D4-AD2C-2639AD63AF25}
+		{889D0124-5D8B-4104-8BD7-A998EB0EB58C} = {321AB327-69A9-4ED5-B00D-9803DBACE0D9}
+		{0A6D5ED9-BE7E-40D5-8A0C-83D31633EF24} = {AD1DB808-8AF4-4B6F-8882-E008F38D7AA1}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4CA73350-2317-4D5A-AAAA-B1AF502210EC}
