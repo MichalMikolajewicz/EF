@@ -1,9 +1,8 @@
-C:\Users\Michal\Documents\Visual Studio 2017\Projects\EntityFrameworkApplication\Data\obj\Debug\netcoreapp2.0\Data.csproj.CoreCompileInputs.cache
-C:\Users\Michal\Documents\Visual Studio 2017\Projects\EntityFrameworkApplication\Data\obj\Debug\netcoreapp2.0\Data.AssemblyInfoInputs.cache
-C:\Users\Michal\Documents\Visual Studio 2017\Projects\EntityFrameworkApplication\Data\obj\Debug\netcoreapp2.0\Data.AssemblyInfo.cs
 C:\Users\Michal\Documents\Visual Studio 2017\Projects\EntityFrameworkApplication\Data\bin\Debug\netcoreapp2.0\Data.deps.json
 C:\Users\Michal\Documents\Visual Studio 2017\Projects\EntityFrameworkApplication\Data\bin\Debug\netcoreapp2.0\Data.dll
 C:\Users\Michal\Documents\Visual Studio 2017\Projects\EntityFrameworkApplication\Data\bin\Debug\netcoreapp2.0\Data.pdb
+C:\Users\Michal\Documents\Visual Studio 2017\Projects\EntityFrameworkApplication\Data\obj\Debug\netcoreapp2.0\Data.csproj.CoreCompileInputs.cache
+C:\Users\Michal\Documents\Visual Studio 2017\Projects\EntityFrameworkApplication\Data\obj\Debug\netcoreapp2.0\Data.AssemblyInfoInputs.cache
+C:\Users\Michal\Documents\Visual Studio 2017\Projects\EntityFrameworkApplication\Data\obj\Debug\netcoreapp2.0\Data.AssemblyInfo.cs
 C:\Users\Michal\Documents\Visual Studio 2017\Projects\EntityFrameworkApplication\Data\obj\Debug\netcoreapp2.0\Data.dll
 C:\Users\Michal\Documents\Visual Studio 2017\Projects\EntityFrameworkApplication\Data\obj\Debug\netcoreapp2.0\Data.pdb
-C:\Users\Michal\Documents\Visual Studio 2017\Projects\EntityFrameworkApplication\Data\obj\Debug\netcoreapp2.0\Data.csprojAssemblyReference.cache

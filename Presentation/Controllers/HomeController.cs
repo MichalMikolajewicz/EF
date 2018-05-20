@@ -7,21 +7,22 @@ using Microsoft.AspNetCore.Mvc;
 using Data.Persistence;
 using Data.Models;
 using Data.Core;
+using Service.Contracts;
 
 namespace Presentation.Controllers
 {
     public class HomeController : Controller
     {
-		private readonly IUnitOfWork _unitOfWork;
+		private readonly IPersonService personService;
 
-		public HomeController(IUnitOfWork unitOfWork)
+		public HomeController(IPersonService personService)
 		{
-			_unitOfWork = unitOfWork;
+			this.personService = personService;
 		}
 
 		public IActionResult Index()
         {
-			var people = _unitOfWork.People.Get(1); // good!
+			var people = personService.GetPeople(); // good!
             return View();
         }
 

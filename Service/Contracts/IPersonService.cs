@@ -8,6 +8,5 @@ namespace Service.Contracts
     public interface IPersonService
     {
 		IEnumerable<PersonModel> GetPeople();
-
 	}
 }
