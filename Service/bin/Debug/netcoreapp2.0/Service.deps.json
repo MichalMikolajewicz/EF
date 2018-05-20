@@ -11,6 +11,7 @@
           "AutoMapper": "6.2.2",
           "Data": "1.0.0",
           "Microsoft.EntityFrameworkCore": "2.0.3",
+          "Models": "1.0.0",
           "SimpleInjector": "4.3.0"
         },
         "runtime": {
@@ -1494,6 +1495,11 @@
         "runtime": {
           "Data.dll": {}
         }
+      },
+      "Models/1.0.0": {
+        "runtime": {
+          "Models.dll": {}
+        }
       }
     }
   },
@@ -2477,6 +2483,11 @@
       "hashPath": "system.xml.xpath.xdocument.4.3.0.nupkg.sha512"
     },
     "Data/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Models/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

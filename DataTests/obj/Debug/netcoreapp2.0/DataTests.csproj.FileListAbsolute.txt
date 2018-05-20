@@ -12,3 +12,6 @@ C:\Users\Michal\Documents\Visual Studio 2017\Projects\EntityFrameworkApplication
 C:\Users\Michal\Documents\Visual Studio 2017\Projects\EntityFrameworkApplication\DataTests\bin\Debug\netcoreapp2.0\DataTests.pdb
 C:\Users\Michal\Documents\Visual Studio 2017\Projects\EntityFrameworkApplication\DataTests\obj\Debug\netcoreapp2.0\DataTests.dll
 C:\Users\Michal\Documents\Visual Studio 2017\Projects\EntityFrameworkApplication\DataTests\obj\Debug\netcoreapp2.0\DataTests.pdb
+C:\Users\Michal\Documents\Visual Studio 2017\Projects\EntityFrameworkApplication\DataTests\bin\Debug\netcoreapp2.0\Data.dll
+C:\Users\Michal\Documents\Visual Studio 2017\Projects\EntityFrameworkApplication\DataTests\bin\Debug\netcoreapp2.0\Data.pdb
+C:\Users\Michal\Documents\Visual Studio 2017\Projects\EntityFrameworkApplication\DataTests\obj\Debug\netcoreapp2.0\DataTests.csproj.CopyComplete

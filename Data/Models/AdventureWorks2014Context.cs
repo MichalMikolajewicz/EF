@@ -8,9 +8,9 @@ namespace Data.Models
 {
     public partial class AdventureWorks2014Context : DbContext
     {
-		public AdventureWorks2014Context(DbContextOptions<AdventureWorks2014Context> options)
-	: base(options)
+		public AdventureWorks2014Context(DbContextOptions<AdventureWorks2014Context> options) : base(options)
 		{ }
+
 		public virtual DbSet<Address> Address { get; set; }
         public virtual DbSet<AddressType> AddressType { get; set; }
         public virtual DbSet<AwbuildVersion> AwbuildVersion { get; set; }
@@ -2665,5 +2665,11 @@ namespace Data.Models
                     .OnDelete(DeleteBehavior.ClientSetNull);
             });
         }
+
+		//protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+		//{
+		//	optionsBuilder.UseSqlServer(this.connectionString);
+		//	base.OnConfiguring(optionsBuilder);
+		//}
     }
 }
