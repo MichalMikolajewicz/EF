@@ -5,9 +5,7 @@ C:\Users\Michal\Documents\Visual Studio 2017\Projects\EntityFrameworkApplication
 C:\Users\Michal\Documents\Visual Studio 2017\Projects\EntityFrameworkApplication\Service\bin\Debug\netcoreapp2.0\Service.dll
 C:\Users\Michal\Documents\Visual Studio 2017\Projects\EntityFrameworkApplication\Service\bin\Debug\netcoreapp2.0\Service.pdb
 C:\Users\Michal\Documents\Visual Studio 2017\Projects\EntityFrameworkApplication\Service\bin\Debug\netcoreapp2.0\Data.dll
-C:\Users\Michal\Documents\Visual Studio 2017\Projects\EntityFrameworkApplication\Service\bin\Debug\netcoreapp2.0\SimpleInjector.dll
 C:\Users\Michal\Documents\Visual Studio 2017\Projects\EntityFrameworkApplication\Service\bin\Debug\netcoreapp2.0\Data.pdb
-C:\Users\Michal\Documents\Visual Studio 2017\Projects\EntityFrameworkApplication\Service\bin\Debug\netcoreapp2.0\SimpleInjector.xml
 C:\Users\Michal\Documents\Visual Studio 2017\Projects\EntityFrameworkApplication\Service\obj\Debug\netcoreapp2.0\Service.csproj.CopyComplete
 C:\Users\Michal\Documents\Visual Studio 2017\Projects\EntityFrameworkApplication\Service\obj\Debug\netcoreapp2.0\Service.dll
 C:\Users\Michal\Documents\Visual Studio 2017\Projects\EntityFrameworkApplication\Service\obj\Debug\netcoreapp2.0\Service.pdb
