@@ -20,63 +20,63 @@ using Service.Configurations.DependencyInjection;
 
 namespace Presentation
 {
-    public class Startup
-    {
-		private Container container = BusinessContainer.container;
-
-        public Startup(IConfiguration configuration)
-        {
-            Configuration = configuration;
-        }
-
-        public IConfiguration Configuration { get; }
-
-        // This method gets called by the runtime. Use this method to add services to the container.
-        public void ConfigureServices(IServiceCollection services)
-        {
-            services.AddMvc();
-			IntegrateSimpleInjector(services);
-
-			//var connection = @"Server=MICHAL\SQLEXPRESS;Database=AdventureWorks2014;Trusted_Connection=True;";
-			//services.AddDbContext<AdventureWorks2014Context>(options => options.UseSqlServer(connection));
-			//services.AddScoped<IUnitOfWork, UnitOfWork>();
-			//services.AddScoped<IPersonService, PersonService>();
+	public class Startup
+	{
+		public Startup(IConfiguration configuration)
+		{
+			Configuration = configuration;
 		}
 
-        // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env)
-        {
-			InitializeContainer(app);
-			
+		public IConfiguration Configuration { get; }
+		public Container Container { get; private set; }
+		private void SetupContainer()
+		{
+			var container = new Container();
+			new BusinessContainer(container, Configuration);
+			Container = container;
+		}
+		// This method gets called by the runtime. Use this method to add services to the container.
+		public void ConfigureServices(IServiceCollection services)
+		{
+			SetupContainer();
+			services.AddMvc();
+			IntegrateSimpleInjector(services);
+		}
 
-			container.Verify();
+		// This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
+		public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+		{
+			InitializeContainer(app);
+
+
+			Container.Verify();
 
 			if (env.IsDevelopment())
-            {
-                app.UseDeveloperExceptionPage();
-                app.UseWebpackDevMiddleware(new WebpackDevMiddlewareOptions
-                {
-                    HotModuleReplacement = true
-                });
-            }
-            else
-            {
-                app.UseExceptionHandler("/Home/Error");
-            }
+			{
+				app.UseDeveloperExceptionPage();
+				app.UseWebpackDevMiddleware(new WebpackDevMiddlewareOptions
+				{
+					HotModuleReplacement = true
+				});
+			}
+			else
+			{
+				app.UseExceptionHandler("/Home/Error");
+			}
 
-            app.UseStaticFiles();
+			app.UseStaticFiles();
 
-            app.UseMvc(routes =>
-            {
-                routes.MapRoute(
-                    name: "default",
-                    template: "{controller=Home}/{action=Index}/{id?}");
+			app.UseMvc(routes =>
+			{
+				routes.MapRoute(
+					name: "default",
+					template: "{controller=Home}/{action=Index}/{id?}");
 
-                routes.MapSpaFallbackRoute(
-                    name: "spa-fallback",
-                    defaults: new { controller = "Home", action = "Index" });
-            });
-        }
+				routes.MapSpaFallbackRoute(
+					name: "spa-fallback",
+					defaults: new { controller = "Home", action = "Index" });
+			});
+		}
 
 		private void IntegrateSimpleInjector(IServiceCollection services)
 		{
@@ -85,25 +85,25 @@ namespace Presentation
 			services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
 
 			services.AddSingleton<IControllerActivator>(
-				new SimpleInjectorControllerActivator(container));
+				new SimpleInjectorControllerActivator(Container));
 			services.AddSingleton<IViewComponentActivator>(
-				new SimpleInjectorViewComponentActivator(container));
+				new SimpleInjectorViewComponentActivator(Container));
 
-			services.EnableSimpleInjectorCrossWiring(container);
-			services.UseSimpleInjectorAspNetRequestScoping(container);
+			services.EnableSimpleInjectorCrossWiring(Container);
+			services.UseSimpleInjectorAspNetRequestScoping(Container);
 		}
 
 		private void InitializeContainer(IApplicationBuilder app)
 		{
 			// Add application presentation components:
-			container.RegisterMvcControllers(app);
-			container.RegisterMvcViewComponents(app);
+			Container.RegisterMvcControllers(app);
+			Container.RegisterMvcViewComponents(app);
 
 			// Add application services. For instance:
-			container.Register<IPersonService, PersonService>(Lifestyle.Scoped);
+			Container.Register<IPersonService, PersonService>(Lifestyle.Scoped);
 
 			// Allow Simple Injector to resolve services from ASP.NET Core.
-			container.AutoCrossWireAspNetComponents(app);
+			Container.AutoCrossWireAspNetComponents(app);
 		}
 	}
 }
