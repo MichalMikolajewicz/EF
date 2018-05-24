@@ -892,6 +892,11 @@ namespace Data.Models
 					.HasMaxLength(4000)
 					.IsUnicode(false);
 
+				entity.Property(e => e.MigrationTest)
+					.HasColumnName("migrationTest")
+					.HasMaxLength(50)
+					.IsUnicode(false);
+
 				entity.Property(e => e.LogDate).HasColumnName("logDate");
 
 				entity.Property(e => e.LogLevel)
@@ -2666,16 +2671,5 @@ namespace Data.Models
 			});
 		}
 
-		//protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-		//{
-		//	string conString = Microsoft
-		//		.Extensions
-		//		.Configuration
-		//		.ConfigurationExtensions
-		//		.GetConnectionString(this.Configuration, "DefaultConnection");
-
-		//	optionsBuilder.UseSqlServer(@"Server=MICHAL\SQLEXPRESS;Database=AdventureWorks2014;Trusted_Connection=True;");
-		//	base.OnConfiguring(optionsBuilder);
-		//}
 	}
 }

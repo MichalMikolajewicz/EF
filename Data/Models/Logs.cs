@@ -12,5 +12,6 @@ namespace Data.Models
         public string LogSource { get; set; }
         public string LogMessage { get; set; }
         public string Exception { get; set; }
-    }
+		public string MigrationTest { get; set; }
+	}
 }
